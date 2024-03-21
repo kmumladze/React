@@ -61,3 +61,48 @@ ul{
   background-color: grey;
 }
 
+body {
+  overflow: hidden; 
+}
+.App-header{
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  list-style-type: none;
+}
+.nav{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: grey;
+}
+.footer{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: grey;
+}
+
+body {
+  overflow: hidden; 
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 120px); /* Adjust according to your header and footer height */
+}
+
+.App-logo {
+  width: 200px; /* Adjust the size as needed */
+}
+
+}
