@@ -1,13 +1,13 @@
-export default function Header() {
-    return(       
-        <div >
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </div>
+function Header(){
+    return(
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
     )
 }
+
+export default Header;

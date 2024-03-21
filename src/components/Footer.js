@@ -1,7 +1,8 @@
-export default function Footer(){
+function Footer() {
     return(
         <div>
-            <h1>World</h1>
+            <h3>Contact Us</h3>
         </div>
     )
 }
+export default Footer;
