@@ -6,7 +6,7 @@ import Layout from "./components/Layout";
 
 function App() {
   return (
-    <div className="App" style={{ backgroundColor: '#282c34' }}>
+    <div className="App" style={{ backgroundColor: "#282c34" }}>
       <Header />
       <div className="content">
         <Layout />
