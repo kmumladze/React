@@ -1,9 +1,9 @@
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Layout from './components/Layout';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
+import { Layout } from './components/Layout';
 
-function App() {
+export function App() {
   return (
     <div className="App" style={{ backgroundColor: '#282c34' }}>
       <Header />
@@ -14,5 +14,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
