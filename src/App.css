@@ -89,21 +89,19 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: grey;
-    
   }
- 
-
-  body {
-    overflow: hidden;
-  }
-  
-  /* .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .App-logo {
-    width: 200px;
-  } */
 }
+
+.App {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
