@@ -1,4 +1,4 @@
-function Header() {
+export function Header() {
   return (
     <div className="nav">
       <nav>
@@ -12,4 +12,4 @@ function Header() {
   );
 }
 
-export default Header;
+
