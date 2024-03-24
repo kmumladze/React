@@ -104,4 +104,11 @@ body {
   align-items: center;
   flex: 1;
 }
+.parent-div{
+  display: grid;
+  grid-template-columns: 50% 50% 50%;
+
+
+
+}
 
