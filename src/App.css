@@ -91,15 +91,20 @@ body {
     background-color: grey;
   }
 }
+
 .App {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   height: 100vh;
-  justify-content: space-between;
 }
 .content {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
+}
+.parent-div {
+  display: grid;
+  grid-template-columns: 50% 50% 50%;
 }
