@@ -1,0 +1,25 @@
+.card {
+  width: 200px;
+  height: 200px;
+  border: 1px solid aqua;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.medal {
+  width: 50px;
+}
+.runner {
+  font-size: 20px;
+}
+.distance {
+  font-size: 15px;
+}
+.time {
+  color: aqua;
+}
