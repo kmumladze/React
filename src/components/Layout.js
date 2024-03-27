@@ -55,6 +55,12 @@ export function Layout() {
 
   return (
     <div className="content">
+      
+      <div className="search-container">
+        <input type="text" placeholder="search"></input>
+        <button>search</button>
+      </div>
+
       <div className="grid-container">
         {femaleRunners.map((runner) => (
           <Profile key={runner.name}>
