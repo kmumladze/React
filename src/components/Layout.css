@@ -3,3 +3,15 @@
   gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
 }
+.medal {
+  width: 50px;
+}
+.runner {
+  font-size: 20px;
+}
+.distance {
+  font-size: 15px;
+}
+.time {
+  color: aqua;
+}
