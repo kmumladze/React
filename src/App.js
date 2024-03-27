@@ -1,15 +1,13 @@
-import './App.css';
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
-import { Layout } from './components/Layout';
+import "./App.css";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { Layout } from "./components/Layout";
 
 export function App() {
   return (
-    <div className="App" style={{ backgroundColor: '#282c34' }}>
+    <div className="App" style={{ backgroundColor: "#282c34" }}>
       <Header />
-      <div className="content">
-        <Layout />
-      </div>
+      <Layout />
       <Footer />
     </div>
   );
