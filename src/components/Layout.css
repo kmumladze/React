@@ -24,3 +24,16 @@
   flex: 1;
 }
 
+.search-container input{
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.146);
+  border-radius: 5px;
+  border: none;
+  font-weight: bolder;
+}
+.search-container button{
+  padding: 8px;
+  background-color: aqua;
+  border: none;
+  border-radius: 5px;
+}
