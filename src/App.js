@@ -5,7 +5,7 @@ import { Layout } from "./components/Layout";
 
 export function App() {
   return (
-    <div className="App" style={{ backgroundColor: "#282c34" }}>
+    <div className="App" >
       <Header />
       <Layout />
       <Footer />
