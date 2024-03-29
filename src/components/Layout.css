@@ -23,15 +23,22 @@
   align-items: center;
   flex: 1;
 }
-
-.search-container input{
+.search-container {
+  display: flex;
+  gap: 10px;
+}
+.search-container input {
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.146);
   border-radius: 5px;
   border: none;
   font-weight: bolder;
 }
-.search-container button{
+.search-container input::placeholder {
+  color: white;
+}
+
+.search-container button {
   padding: 8px;
   background-color: aqua;
   border: none;
