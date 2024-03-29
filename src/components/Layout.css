@@ -33,6 +33,7 @@
   border-radius: 5px;
   border: none;
   font-weight: bolder;
+  color: white;
 }
 .search-container input::placeholder {
   color: white;
