@@ -56,6 +56,7 @@ export function Layout() {
   const [searchValue, setSearchValue] = useState('');
   const [name, setName] = useState('');
   const [runners, setRunners] = useState(results);
+  const [direction, setDirection] = useState('up');
 
   const handleChange = (event) => {
     const newSearch = event.target.value;
@@ -69,28 +70,38 @@ export function Layout() {
     setRunners(filteredRunners);
   };
 
-  // const handleButtonClick = () => {
-  //   const filteredRunners = results.filter((runner) => {
-  //     return runner.name.toLowerCase().includes(searchValue.toLowerCase());
-  //   });
-
-  //   setRunners(filteredRunners);
-  // };
-
   const handleNameClick = (event) => {
     setName(event.target.textContent);
   };
+  const handleClick = (direction) => {
+    setDirection(direction);
+  };
+
+  const sortedRunners = [...runners].sort((a, b) => {
+    if (direction === 'up') {
+      return a.name > b.name;
+    } else {
+      return a.name < b.name;
+    }
+  });
 
   return (
     <div className="content">
       <h1>{name}</h1>
       <div className="search-container">
         <input type="text" placeholder="search" value={searchValue} onChange={handleChange} />
-        {/* <button onClick={handleButtonClick}>search</button> */}
+
+        <div className="arrow">
+          {direction === 'up' ? (
+            <button onClick={() => handleClick('down')}>⬇️</button>
+          ) : (
+            <button onClick={() => handleClick('up')}>⬆️</button>
+          )}
+        </div>
       </div>
 
-      <div className="grid-container">
-        {runners.map((runner) => (
+      <div className="grid-container ">
+        {sortedRunners.map((runner) => (
           <Profile key={runner.name}>
             <img src={runner.img} alt="medal" className="medal" />
             <h1 className="runner" onClick={handleNameClick}>

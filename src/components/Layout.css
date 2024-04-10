@@ -21,10 +21,13 @@
   gap: 30px;
   align-items: center;
   flex: 1;
+  margin: 0 50px;
 }
 .search-container {
   display: flex;
   gap: 10px;
+  align-items: center;
+  width: 100%;
 }
 .search-container input {
   padding: 10px;
@@ -33,14 +36,8 @@
   border: none;
   font-weight: bolder;
   color: white;
+  flex: 1;
 }
 .search-container input::placeholder {
   color: white;
-}
-
-.search-container button {
-  padding: 8px;
-  background-color: aqua;
-  border: none;
-  border-radius: 5px;
 }
