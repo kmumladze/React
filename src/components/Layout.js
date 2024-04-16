@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './Layout.css';
-import { Profile } from './Profile';
 import gold from '../images/gold.png';
 import silver from '../images/silver.png';
 import bronze from '../images/bronze.png';
 import { Search } from './Search';
+import { RunnerList } from './RunnerList';
 
 const results = [
   {
@@ -85,16 +85,8 @@ export function Layout() {
   return (
     <div className="content">
       <Search searchValue={searchValue} handleChange={handleChange} direction={direction} handleClick={handleClick} />
-      <div className="grid-container ">
-        {sortedRunners.map((runner) => (
-          <Profile key={runner.name}>
-            <img src={runner.img} alt="medal" className="medal" />
-            <h1 className="runner">{runner.name}</h1>
-            <h3 className="distance">Distance: {runner.distance}</h3>
-            <p className="time">Finish Time: {runner.time}</p>
-          </Profile>
-        ))}
-      </div>
+
+      <RunnerList sortedRunners={sortedRunners} />
     </div>
   );
 }
