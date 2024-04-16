@@ -54,7 +54,6 @@ const results = [
 
 export function Layout() {
   const [searchValue, setSearchValue] = useState('');
-  const [name, setName] = useState('');
   const [runners, setRunners] = useState(results);
   const [direction, setDirection] = useState('up');
 
@@ -70,9 +69,6 @@ export function Layout() {
     setRunners(filteredRunners);
   };
 
-  const handleNameClick = (event) => {
-    setName(event.target.textContent);
-  };
   const handleClick = (direction) => {
     setDirection(direction);
   };
@@ -87,7 +83,6 @@ export function Layout() {
 
   return (
     <div className="content">
-      <h1>{name}</h1>
       <div className="search-container">
         <input type="text" placeholder="search" value={searchValue} onChange={handleChange} />
 
@@ -104,9 +99,7 @@ export function Layout() {
         {sortedRunners.map((runner) => (
           <Profile key={runner.name}>
             <img src={runner.img} alt="medal" className="medal" />
-            <h1 className="runner" onClick={handleNameClick}>
-              {runner.name}
-            </h1>
+            <h1 className="runner">{runner.name}</h1>
             <h3 className="distance">Distance: {runner.distance}</h3>
             <p className="time">Finish Time: {runner.time}</p>
           </Profile>
