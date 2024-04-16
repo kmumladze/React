@@ -1,8 +1,6 @@
 import { Nav } from './Nav';
 
-const navItems = ['Home', 'About', 'Contact'];
-
-export function Header() {
+export function Header({ navItems }) {
   return (
     <div className="nav">
       <Nav navItems={navItems} />

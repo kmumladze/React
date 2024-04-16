@@ -1,14 +1,16 @@
-import "./App.css";
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
-import { Layout } from "./components/Layout";
+import './App.css';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
+import { Layout } from './components/Layout';
+
+const navItems = ['Home', 'About', 'Contact', 'Profile'];
 
 export function App() {
   return (
-    <div className="App" >
-      <Header />
+    <div className="App">
+      <Header navItems={navItems} />
       <Layout />
-      <Footer />
+      <Footer navItems={navItems} />
     </div>
   );
 }
