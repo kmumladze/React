@@ -1,7 +1,11 @@
+import { Nav } from './Nav';
+
+const navItems = ['Home', 'About', 'Contact'];
+
 export function Footer() {
   return (
     <div className="footer">
-      <h3>Contact Us</h3>
+      <Nav navItems={navItems} />
     </div>
   );
 }
