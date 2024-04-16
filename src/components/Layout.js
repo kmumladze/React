@@ -4,6 +4,7 @@ import { Profile } from './Profile';
 import gold from '../images/gold.png';
 import silver from '../images/silver.png';
 import bronze from '../images/bronze.png';
+import { Search } from './Search';
 
 const results = [
   {
@@ -83,18 +84,7 @@ export function Layout() {
 
   return (
     <div className="content">
-      <div className="search-container">
-        <input type="text" placeholder="search" value={searchValue} onChange={handleChange} />
-
-        <div className="arrow">
-          {direction === 'up' ? (
-            <button onClick={() => handleClick('down')}>⬇️</button>
-          ) : (
-            <button onClick={() => handleClick('up')}>⬆️</button>
-          )}
-        </div>
-      </div>
-
+      <Search searchValue={searchValue} handleChange={handleChange} direction={direction} handleClick={handleClick} />
       <div className="grid-container ">
         {sortedRunners.map((runner) => (
           <Profile key={runner.name}>
